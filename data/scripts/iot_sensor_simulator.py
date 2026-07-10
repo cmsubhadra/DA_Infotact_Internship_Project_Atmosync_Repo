@@ -85,5 +85,5 @@ print("IOT sensor data generated successfully")
 
 print(df.head())
 
-print(df.head())
+
 

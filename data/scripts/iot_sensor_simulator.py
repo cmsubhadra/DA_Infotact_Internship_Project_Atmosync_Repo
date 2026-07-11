@@ -83,7 +83,4 @@ df.to_csv("iot_sensor_data.csv",index=False)
 
 print("IOT sensor data generated successfully")
 
-print(df.head())
-
-
-
+print(df.head(10))

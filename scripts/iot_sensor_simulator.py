@@ -8,7 +8,7 @@ destinations = ["Kochi", "Bengaluru", "Chennai", "Hyderabad", "Mumbai"]
 
 #number of records to generate
 
-num_records=5000
+num_records=100
 
 start_time=datetime.now()
 

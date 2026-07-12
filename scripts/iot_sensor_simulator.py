@@ -8,7 +8,7 @@ destinations = ["Kochi", "Bengaluru", "Chennai", "Hyderabad", "Mumbai"]
 
 #number of records to generate
 
-num_records=100
+num_records=5000
 
 start_time=datetime.now()
 
@@ -84,4 +84,6 @@ df.to_csv("iot_sensor_data.csv",index=False)
 print("IOT sensor data generated successfully")
 
 print(df.head())
+
+
 

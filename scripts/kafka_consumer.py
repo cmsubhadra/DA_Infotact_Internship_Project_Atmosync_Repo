@@ -13,7 +13,5 @@ consumer = KafkaConsumer(
 print("Waiting for Sensor Data...\n")
 
 for message in consumer:
-
     sensor_data = message.value
-
     print(sensor_data)

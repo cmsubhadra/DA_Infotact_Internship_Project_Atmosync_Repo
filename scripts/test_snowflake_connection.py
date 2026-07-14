@@ -3,7 +3,7 @@ import snowflake.connector
 try:
     conn = snowflake.connector.connect(
         user="",
-        password="",      
+        password="",     
         account="",
         warehouse="ATMOSYNC_WH",
         database="ATMOSYNC_DB",
@@ -25,4 +25,3 @@ try:
 
 except Exception as e:
     print("❌ Connection Failed")
-    print(e)

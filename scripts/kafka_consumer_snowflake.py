@@ -3,7 +3,6 @@ import snowflake.connector
 import json
 
 # Connect to Snowflake
-
 conn = snowflake.connector.connect(
     user="",
     password="",          
@@ -22,14 +21,13 @@ print("✅ Connected to Snowflake")
 consumer = KafkaConsumer(
     "sensor-data",
     bootstrap_servers="localhost:9092",
-    auto_offset_reset="earliest",
+    auto_offset_reset="latest",
     enable_auto_commit=True,
     group_id="sensor-group-snowflake",
     value_deserializer=lambda x: json.loads(x.decode("utf-8"))
 )
 
 print("📡 Waiting for Kafka messages...\n")
-
 
 # SQL Insert Statement
 
@@ -54,8 +52,9 @@ VALUES
     %s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s
 )
 """
-# Read Kafka Messages
 
+
+# Read Kafka Messages
 try:
 
     for message in consumer:

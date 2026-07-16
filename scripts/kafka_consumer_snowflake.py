@@ -3,18 +3,11 @@ import snowflake.connector
 import json
 
 # Connect to Snowflake
-<<<<<<< Updated upstream
+
 conn = snowflake.connector.connect(
     user="",
     password="",          
     account="",
-=======
-
-conn = snowflake.connector.connect(
-    user="Nandhana",
-    password="Nandu@13snowflake",     
-    account="IHHVBHB-AS84925",
->>>>>>> Stashed changes
     warehouse="ATMOSYNC_WH",
     database="ATMOSYNC_DB",
     schema="RAW"
@@ -24,22 +17,19 @@ cursor = conn.cursor()
 
 print("✅ Connected to Snowflake")
 
-<<<<<<< Updated upstream
-=======
-
->>>>>>> Stashed changes
 # Connect to Kafka
 
 consumer = KafkaConsumer(
     "sensor-data",
     bootstrap_servers="localhost:9092",
-    auto_offset_reset="latest",
+    auto_offset_reset="earliest",
     enable_auto_commit=True,
     group_id="sensor-group-snowflake",
     value_deserializer=lambda x: json.loads(x.decode("utf-8"))
 )
 
 print("📡 Waiting for Kafka messages...\n")
+
 
 # SQL Insert Statement
 
@@ -64,9 +54,8 @@ VALUES
     %s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s
 )
 """
-
-
 # Read Kafka Messages
+
 try:
 
     for message in consumer:

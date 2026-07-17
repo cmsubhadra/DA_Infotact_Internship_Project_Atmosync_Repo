@@ -2,12 +2,12 @@ import snowflake.connector
 
 try:
     conn = snowflake.connector.connect(
-        user="",
-        password="",     
-        account="",
-        warehouse="ATMOSYNC_WH",
-        database="ATMOSYNC_DB",
-        schema="RAW"
+    user="",
+    password="",
+    account="",
+    warehouse="ATMOSYNC_WH",
+    database="ATMOSYNC_DB",
+    schema="RAW"
     )
 
     print("✅ Connected to Snowflake Successfully!")

@@ -9,7 +9,7 @@ dbt_packages/
 logs/
 
 # Python cache
-__pycache__/
+_pycache_/
 *.pyc
 
 # VS Code

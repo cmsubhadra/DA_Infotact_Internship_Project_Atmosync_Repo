@@ -1,0 +1,19 @@
+# Python virtual environments
+venv/
+dbt_env/
+superset_env/
+
+# dbt generated files
+target/
+dbt_packages/
+logs/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# VS Code
+.vscode/
+
+# Environment variables
+.env

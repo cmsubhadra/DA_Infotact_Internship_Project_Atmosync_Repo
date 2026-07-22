@@ -26,9 +26,9 @@ SELECT
     spoilage_risk,
     recommended_action,
 
-    ------------------------------------------------
+    
     -- Derived Business Columns
-    ------------------------------------------------
+
 
     CASE
         WHEN temperature_c < 5 THEN 'Low'

@@ -4,8 +4,9 @@ import json
 
 # Connect to Snowflake
 conn = snowflake.connector.connect(
+    
     user="",
-    password="",          
+    password="",
     account="",
     warehouse="ATMOSYNC_WH",
     database="ATMOSYNC_DB",

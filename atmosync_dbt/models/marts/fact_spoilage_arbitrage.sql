@@ -61,8 +61,8 @@ SELECT
 
     CASE
         WHEN spoilage_risk = 'Low' THEN 72
-        WHEN spoilage_risk = 'Medium' THEN 48
-        ELSE 24
+        WHEN spoilage_risk = 'Medium' THEN 36
+        ELSE 12
     END AS estimated_time_to_spoil_hours,
 
     ROUND(
@@ -70,8 +70,8 @@ SELECT
         (
             CASE
                 WHEN spoilage_risk = 'Low' THEN 72
-                WHEN spoilage_risk = 'Medium' THEN 48
-                ELSE 24
+                WHEN spoilage_risk = 'Medium' THEN 36
+                ELSE 12
             END
         )
 
@@ -102,8 +102,8 @@ SELECT
                 (
                     CASE
                         WHEN spoilage_risk = 'Low' THEN 72
-                        WHEN spoilage_risk = 'Medium' THEN 48
-                        ELSE 24
+                        WHEN spoilage_risk = 'Medium' THEN 36
+                        ELSE 12
                     END
                 )
 
@@ -138,8 +138,8 @@ SELECT
                 (
                     CASE
                         WHEN spoilage_risk = 'Low' THEN 72
-                        WHEN spoilage_risk = 'Medium' THEN 48
-                        ELSE 24
+                        WHEN spoilage_risk = 'Medium' THEN 36
+                        ELSE 12
                     END
                 )
 
@@ -167,5 +167,3 @@ SELECT
     END AS reroute_recommended
 
 FROM source_data
-
-   

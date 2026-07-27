@@ -2,7 +2,7 @@
 
 ## 📌 Project Overview
 
-AtmoSync is a Data Engineering and Analytics project developed as part of the *Infotact Solutions Internship*. The project monitors environmental conditions inside agricultural shipping containers using simulated IoT sensor data. It processes streaming sensor data through a modern data engineering pipeline and transforms it into business-ready insights for monitoring container health and spoilage risks.
+AtmoSync is a Data Engineering and Analytics project developed as part of the **Infotact Solutions Internship**. The project monitors environmental conditions inside agricultural shipping containers using simulated IoT sensor data. It processes streaming sensor data through a modern data engineering pipeline and transforms it into business-ready insights for monitoring container health and spoilage risks.
 
 ---
 
@@ -48,7 +48,7 @@ Traditional supply chain systems rely on estimated transit times and general wea
 
 ## 🏗️ Project Architecture
 
-
+```
 IoT Sensor Simulator (Python)
             │
             ▼
@@ -64,13 +64,13 @@ IoT Sensor Simulator (Python)
             │
             ▼
  Apache Superset Dashboard
-
+```
 
 ---
 
 ## 📂 Repository Structure
 
-
+```
 DA_Infotact_Internship_Project_Atmosync_Repo/
 │
 ├── atmosync_dbt/
@@ -94,7 +94,7 @@ DA_Infotact_Internship_Project_Atmosync_Repo/
 │
 ├── README.md
 └── .gitignore
-
+```
 
 ---
 
@@ -116,8 +116,8 @@ DA_Infotact_Internship_Project_Atmosync_Repo/
 ## ✅ Week 2 Progress
 
 - Configured dbt and verified Snowflake connection.
-- Created staging model (stg_iot_sensor_data).
-- Created fact model (fact_container_health).
+- Created staging model (`stg_iot_sensor_data`).
+- Created fact model (`fact_container_health`).
 - Applied business logic using SQL transformations.
 - Executed dbt models successfully.
 - Verified transformed data in Snowflake.
@@ -162,3 +162,6 @@ This project provided practical experience in:
 🟢 Week 2 – Completed
 
 🟡 Week 3 – In Progress
+
+
+

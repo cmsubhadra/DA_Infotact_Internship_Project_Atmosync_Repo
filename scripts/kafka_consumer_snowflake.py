@@ -46,7 +46,6 @@ INSERT INTO IOT_SENSOR_DATA
     DESTINATION,
     MARKET_PRICE_USD_PER_TON,
     SPOILAGE_RISK
-    
 )
 VALUES
 (
@@ -78,7 +77,6 @@ try:
                 data["Destination"],
                 int(data["Market_Price_USD_per_ton"]),
                 data["Spoilage_Risk"]
-                
             )
         )
 

@@ -35,13 +35,10 @@ for i in range(num_records):
 
     if temperature> 8 or humidity>90:
       spoilage_risk="High"
-      
     elif temperature>6 or humidity>80:
        spoilage_risk="Medium"
-       
     else:
       spoilage_risk="Low"
-      
 
     data.append([
         timestamp,
@@ -71,8 +68,7 @@ columns = [
     "Longitude",
     "Destination",
     "Market_Price_USD_per_ton",
-    "Spoilage_Risk",
-    
+    "Spoilage_Risk"
 ]
 
 df=pd.DataFrame(data,columns=columns)
@@ -84,8 +80,6 @@ df.to_csv("iot_sensor_data.csv",index=False)
 print("IOT sensor data generated successfully")
 
 print(df.head())
-
-
 
 
 

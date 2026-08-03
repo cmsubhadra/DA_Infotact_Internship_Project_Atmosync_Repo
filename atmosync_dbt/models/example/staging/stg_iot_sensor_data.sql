@@ -29,7 +29,6 @@ cleaned_data AS (
         CAST("MARKET_PRICE_USD_PER_TON" AS NUMBER(10,2)) AS market_price_usd_per_ton,
 
         TRIM("SPOILAGE_RISK") AS spoilage_risk
-        
 
     FROM source_data
 

@@ -4,6 +4,8 @@ cd /d "C:\Users\cmsub\Documents\GitHub\DA_Infotact_Internship_Project_Atmosync_R
 
 call "C:\Users\cmsub\dbt_env\Scripts\activate.bat"
 
-dbt run
+dbt run 
 
-pause
+dbt test
+
+exit/b

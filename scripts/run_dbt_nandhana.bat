@@ -7,4 +7,4 @@ call "C:\Users\vinud\dbt_env\Scripts\activate.bat"
 dbt run
 dbt test
 
-pause
+exit /b

@@ -24,7 +24,7 @@ SELECT
     market_price_usd_per_ton,
 
     spoilage_risk,
-    recommended_action,
+    
 
     
     -- Derived Business Columns

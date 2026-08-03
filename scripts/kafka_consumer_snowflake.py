@@ -45,12 +45,11 @@ INSERT INTO IOT_SENSOR_DATA
     LONGITUDE,
     DESTINATION,
     MARKET_PRICE_USD_PER_TON,
-    SPOILAGE_RISK,
-    RECOMMENDED_ACTION
+    SPOILAGE_RISK
 )
 VALUES
 (
-    %s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s
+    %s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s
 )
 """
 
@@ -77,8 +76,7 @@ try:
                 float(data["Longitude"]),
                 data["Destination"],
                 int(data["Market_Price_USD_per_ton"]),
-                data["Spoilage_Risk"],
-                data["Recommended_Action"]
+                data["Spoilage_Risk"]
             )
         )
 

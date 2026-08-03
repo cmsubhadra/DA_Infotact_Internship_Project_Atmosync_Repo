@@ -35,13 +35,10 @@ for i in range(num_records):
 
     if temperature> 8 or humidity>90:
       spoilage_risk="High"
-      action="Reroute Shipment"
     elif temperature>6 or humidity>80:
        spoilage_risk="Medium"
-       action="Monitor"
     else:
       spoilage_risk="Low"
-      action="Continue route"
 
     data.append([
         timestamp,
@@ -55,7 +52,7 @@ for i in range(num_records):
         destination,
         market_price,
         spoilage_risk,
-        action
+        
     ])
 
 #Create Dataframe
@@ -71,8 +68,7 @@ columns = [
     "Longitude",
     "Destination",
     "Market_Price_USD_per_ton",
-    "Spoilage_Risk",
-    "Recommended_Action"
+    "Spoilage_Risk"
 ]
 
 df=pd.DataFrame(data,columns=columns)

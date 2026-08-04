@@ -1,16 +1,9 @@
-tables in schema raw;
+SHOW TABLES IN SCHEMA ATMOSYNC_DB.RAW;
 
-select count(*) from raw.iot_sensor_data;
+SELECT COUNT(*) FROM ATMOSYNC_DB.RAW.FACT_SPOILAGE_ARBITRAGE;
 
-select count(*) from raw.fact_container_health;
+ALTER TABLE ATMOSYNC_DB.RAW.FACT_SPOILAGE_ARBITRAGE CLUSTER BY(DESTINATION,SPOILAGE_RISK);
 
-select count(*) from raw.fact_spoilage_arbitrage;
+SHOW TABLES LIKE 'FACT_SPOILAGE_ARBITRAGE' IN SCHEMA ATMOSYNC_DB.RAW;
 
-SELECT * FROM raw.fact_spoilage_arbitrage LIMIT 10;
-
-alter table raw.fact_spoilage_arbitrage cluster by (DESTINATION,SPOILAGE_RISK);
-
-SHOW TABLES LIKE 'fact_spoilage_arbitrage' in schema raw;
-
-select * FROM RAW.FACT_SPOILAGE_ARBITRAGE WHERE DESTINATION='Kochi' AND SPOILAGE_RISK='High';
-
+SELECT * FROM ATMOSYNC_DB.RAW.FACT_SPOILAGE_ARBITRAGE WHERE DESTINATION ='Kochi' AND SPOILAGE_RISK='High';

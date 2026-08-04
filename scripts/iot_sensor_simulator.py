@@ -6,7 +6,7 @@ from datetime import datetime,timedelta
 commodities = ["Avocados", "Bananas", "Tomatoes", "Grapes", "Mangoes"]
 destinations = ["Kochi", "Bengaluru", "Chennai", "Hyderabad", "Mumbai"]
 
-#number of records to generate
+#number of records to generate  
 
 num_records=300
 

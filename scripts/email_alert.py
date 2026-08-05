@@ -4,11 +4,12 @@ import snowflake.connector
 import smtplib
 from email.message import EmailMessage
 
+# Load environment variables
 load_dotenv()
 
+# Read credentials from .env
 EMAIL_ADDRESS = os.getenv("EMAIL_ADDRESS")
 EMAIL_PASSWORD = os.getenv("EMAIL_PASSWORD")
-
 SNOWFLAKE_USER = os.getenv("SNOWFLAKE_USER")
 SNOWFLAKE_PASSWORD = os.getenv("SNOWFLAKE_PASSWORD")
 SNOWFLAKE_ACCOUNT = os.getenv("SNOWFLAKE_ACCOUNT")
@@ -33,7 +34,7 @@ print("✅ Connected to Snowflake")
 # Query high-risk containers
 
 query = """
-SELECT * FROM RAW.VW_HIGH_RISK_CONTAINERS;
+SELECT * FROM ATMOSYNC_DB.RAW.VW_HIGH_RISK_CONTAINERS;
 """
 
 cursor.execute(query)
@@ -59,23 +60,26 @@ if len(high_risk_containers) > 0:
 
     Hello,
 
-High Spoilage Risk Containers have been detected.
+    High Spoilage Risk Containers have been detected.
 
-Total High Risk Containers: {len(high_risk_containers)}
+    Total High Risk Containers: {len(high_risk_containers)} 
 
-Recommended Actions:
+    -----Recommended Actions-----
 
-* Inspect all High Risk containers immediately.
-* Prioritize these shipments for delivery.
-* Monitor temperature and humidity conditions.
-* Review shipment routes to minimize spoilage risk.
+    * Inspect all high risk containers immediately.
 
+    * Prioritize these shipments for delivery.
 
-Please check the Atmosync Dashboard for complete details.
+    * Monitor temperature and humidity conditions.
 
-Regards,
-Atmosync Monitoring System
-"""
+    * Review shipment routes to minimize spoilage risk.
+
+    Please check the Atmosync Dashboard for complete details.
+
+    Regards,
+
+    Atmosync Monitoring System
+    """
 
 else:
 
@@ -86,18 +90,16 @@ else:
 print(email_subject)
 print(email_body)
 
+
 # Create email message
 msg = EmailMessage()
 
 msg["Subject"] = "Atmosync High Risk Alert"
 msg["From"] = ""
-msg["To"] = ""
+msg["To"] = ""  
 msg.set_content(email_body)
-
-# Send email using Gmail SMTP
-
 with smtplib.SMTP_SSL("smtp.gmail.com", 465) as smtp:
-    smtp.login(EMAIL_ADDRESS, EMAIL_PASSWORD)
+    smtp.login(EMAIL_ADDRESS,EMAIL_PASSWORD)
     smtp.send_message(msg)
 
 print("✅ Email sent successfully!")

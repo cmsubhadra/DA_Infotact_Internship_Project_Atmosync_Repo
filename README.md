@@ -98,7 +98,7 @@ DA_Infotact_Internship_Project_Atmosync_Repo/
 ├── README.md
 └── .gitignore
 
-##✅ Week 1 Progress
+✅ Week 1 Progress
 Developed Python IoT Sensor Simulator.
 Generated mock IoT sensor data.
 Configured Apache Kafka in KRaft mode.
@@ -110,7 +110,7 @@ Installed and configured Apache Superset.
 Connected Superset with Snowflake.
 Verified dataset connectivity.
 
-##✅ Week 2 Progress
+✅ Week 2 Progress
 Installed and configured dbt Core and Snowflake adapter.
 Configured and verified Snowflake connectivity using dbt debug.
 Created stg_iot_sensor_data and fact_container_health models.
@@ -120,7 +120,7 @@ Executed and verified dbt transformations.
 Connected transformed data to Apache Superset.
 Created the initial Container Health Dashboard with KPIs and visualizations.
 
-##✅ Week 3 Progress
+✅ Week 3 Progress
 Created FACT_SPOILAGE_ARBITRAGE model.
 Implemented spoilage-risk, priority, shipment-status, spoilage-margin, and reroute logic.
 Added calculated fields for spoilage-risk analysis and shipment prioritization.
@@ -129,7 +129,7 @@ Created risk-focused charts, KPIs, and high-priority container details.
 Added visualizations for commodity, destination, spoilage margin, time to spoilage, and reroute recommendations.
 Improved dashboard layout and visualization consistency.
 
-##✅ Week 4 Progress
+✅ Week 4 Progress
 Created Snowflake clustering and tested query performance.
 Created run_dbt.bat and configured automated dbt execution using Windows Task Scheduler.
 Created the alert-condition view for critical spoilage-risk shipments.
@@ -140,7 +140,7 @@ Successfully tested automated dbt execution and email delivery.
 Finalized the Superset dashboard with Commodity, Destination, Shipment Status, Priority, Reroute Recommended, and Time Range filters.
 Improved dashboard presentation and consistency.
 
-##📊 Dashboard Highlights
+📊 Dashboard Highlights
 
 The Apache Superset dashboards provide insights into:
 
@@ -157,7 +157,7 @@ Reroute Recommendations
 High-Priority Containers
 Interactive KPIs and Filters
 
-##📧 Automated Email Alerts
+📧 Automated Email Alerts
 
 AtmoSync includes automated email alerts for critical spoilage-risk shipments.
 
@@ -173,7 +173,7 @@ Total critical containers
 Critical shipment information
 Recommended action
 
-##⚙️ Automation
+⚙️ Automation
 
 Automated dbt Execution
 run_dbt.bat
@@ -196,7 +196,7 @@ Gmail SMTP
      ↓
 Critical Shipment Alert
 
-##📚 Learning Outcomes
+📚 Learning Outcomes
 
 This project provided practical experience in:
 
@@ -214,7 +214,7 @@ Git & GitHub Collaboration
 End-to-End Data Engineering Pipeline
 IoT Data Analytics
 
-##🚀 Project Status
+🚀 Project Status
 
 🟢 Week 1 – Completed
 

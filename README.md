@@ -98,7 +98,6 @@ DA_Infotact_Internship_Project_Atmosync_Repo/
 ├── README.md
 └── .gitignore
 ```
-
 ---
 
 ## ✅ Week 1 Progress
@@ -195,7 +194,6 @@ PRIORITY_LEVEL = 'Critical'
 The email alert includes:
 
 - Total critical containers
-- Critical shipment information
 - Recommended action
 
 ---
@@ -270,10 +268,3 @@ This project provided practical experience in:
 
 🟢 Task Scheduler – Completed
 
-🟢 Dashboard – Completed
-
-🟢 dbt Automation – Completed
-
-🟢 Email Alert Automation – Completed
-
-🟢 Task Scheduler – Completed

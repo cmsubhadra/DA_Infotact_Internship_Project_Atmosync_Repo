@@ -97,8 +97,12 @@ DA_Infotact_Internship_Project_Atmosync_Repo/
 │
 ├── README.md
 └── .gitignore
+```
+
+---
 
 ## ✅ Week 1 Progress
+
 
 - Developed Python IoT Sensor Simulator.
 - Generated mock IoT sensor data.
@@ -115,6 +119,7 @@ DA_Infotact_Internship_Project_Atmosync_Repo/
 
 ## ✅ Week 2 Progress
 
+
 - Installed and configured dbt Core and Snowflake adapter.
 - Configured and verified Snowflake connectivity using `dbt debug`.
 - Created `stg_iot_sensor_data` and `fact_container_health` models.
@@ -128,6 +133,7 @@ DA_Infotact_Internship_Project_Atmosync_Repo/
 
 ## ✅ Week 3 Progress
 
+
 - Created `FACT_SPOILAGE_ARBITRAGE` model.
 - Implemented spoilage-risk, priority, shipment-status, spoilage-margin, and reroute logic.
 - Added calculated fields for spoilage-risk analysis and shipment prioritization.
@@ -139,6 +145,7 @@ DA_Infotact_Internship_Project_Atmosync_Repo/
 ---
 
 ## ✅ Week 4 Progress
+
 
 - Created Snowflake clustering and tested query performance.
 - Created `run_dbt.bat` and configured automated dbt execution using Windows Task Scheduler.
@@ -153,6 +160,7 @@ DA_Infotact_Internship_Project_Atmosync_Repo/
 ---
 
 ## 📊 Dashboard Highlights
+
 
 The Apache Superset dashboards provide insights into:
 
@@ -172,12 +180,13 @@ The Apache Superset dashboards provide insights into:
 ---
 
 ## 📧 Automated Email Alerts
+```text
 
 AtmoSync includes automated email alerts for critical spoilage-risk shipments.
 
 Alerts are generated when:
 
-```text
+
 SHIPMENT_STATUS = 'Spoilage Expected'
 AND
 PRIORITY_LEVEL = 'Critical'
@@ -186,7 +195,6 @@ PRIORITY_LEVEL = 'Critical'
 The email alert includes:
 
 - Total critical containers
-- Critical shipment information
 - Recommended action
 
 ---
@@ -260,3 +268,4 @@ This project provided practical experience in:
 🟢 Email Alert Automation – Completed
 
 🟢 Task Scheduler – Completed
+

@@ -98,7 +98,6 @@ DA_Infotact_Internship_Project_Atmosync_Repo/
 ├── README.md
 └── .gitignore
 ```
-
 ---
 
 ## ✅ Week 1 Progress
